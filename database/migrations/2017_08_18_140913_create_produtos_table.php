@@ -22,6 +22,7 @@ class CreateProdutosTable extends Migration
             $table->string('modelo', 45);
             $table->integer('quantidade_minima')->nullable(true);
             $table->date('data_entrada');
+            $table->boolean("status");
         });
     }
 

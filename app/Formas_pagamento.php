@@ -7,4 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Formas_pagamento extends Model
 {
     public $timespamps = false;
+    
+    protected $fillable = array('forma');
 }
