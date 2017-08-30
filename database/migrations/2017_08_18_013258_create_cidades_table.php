@@ -4,12 +4,17 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * Classe que contem a estrutura da tabela de cidades que será criada através das migrations
+ * 
+ * @author Alexandre Schmidt
+ * 
+ * @version 0.1
+ */
 class CreateCidadesTable extends Migration
 {
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * Estrutura da tabela cidades
      */
     public function up()
     {
@@ -22,9 +27,7 @@ class CreateCidadesTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
-     *
-     * @return void
+     * Função ppara deletar a tabela
      */
     public function down()
     {

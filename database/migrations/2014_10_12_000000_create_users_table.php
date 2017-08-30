@@ -4,15 +4,19 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
-{
+/**
+ * Classe que contem a estrutura da tabela de usuarios que será criada através das migrations
+ * 
+ * @author Alexandre Schmidt
+ * 
+ * @version 0.1
+ */
+class CreateUsersTable extends Migration {
+
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * Estrutura da tabela users
      */
-    public function up()
-    {
+    public function up() {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome', 45);
@@ -22,17 +26,14 @@ class CreateUsersTable extends Migration
             $table->date('data_nascimento');
             $table->string('senha');
             $table->rememberToken();
-            
         });
     }
 
     /**
-     * Reverse the migrations.
-     *
-     * @return void
+     * Função para deletar a tabela
      */
-    public function down()
-    {
+    public function down() {
         Schema::dropIfExists('users');
     }
+
 }

@@ -4,12 +4,17 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * Classe que contem a estrutura da tabela de usuarios que será criada através das migrations
+ * 
+ * @author Alexandre Schmidt
+ * 
+ * @version 0.1
+ */
 class CreateEstadosTable extends Migration
 {
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * Estrutura da tabela estados
      */
     public function up()
     {
@@ -23,9 +28,7 @@ class CreateEstadosTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
-     *
-     * @return void
+     * Função para deletar a tabela
      */
     public function down()
     {

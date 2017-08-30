@@ -4,12 +4,16 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProdutosTable extends Migration
-{
+/**
+ * Classe que contem a estrutura da tabela de produtos que será criada através das migrations
+ * 
+ * @author Alexandre Schmidt
+ * 
+ * @version 0.1
+ */
+class CreateProdutosTable extends Migration{
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * Estrutura da tabela produtos
      */
     public function up()
     {
@@ -27,9 +31,7 @@ class CreateProdutosTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
-     *
-     * @return void
+     * Função que deleta a tabela
      */
     public function down()
     {

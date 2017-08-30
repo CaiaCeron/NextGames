@@ -4,15 +4,19 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateClientesTable extends Migration
-{
+/**
+ * Classe que contem a estrutura da tabela de clientes que será criada através das migrations
+ * 
+ * @author Alexandre Schmidt
+ * 
+ * @version 0.1
+ */
+class CreateClientesTable extends Migration {
+
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * Estrutura d tabela clientes
      */
-    public function up()
-    {
+    public function up() {
         Schema::create('clientes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome', 45);
@@ -27,12 +31,10 @@ class CreateClientesTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
-     *
-     * @return void
+     * Função que deleta a tabela
      */
-    public function down()
-    {
+    public function down() {
         Schema::dropIfExists('clientes');
     }
+
 }

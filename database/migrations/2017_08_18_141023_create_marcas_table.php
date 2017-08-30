@@ -4,15 +4,19 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMarcasTable extends Migration
-{
+/**
+ * Classe que contem a estrutura da tabela de marcas que será criada através das migrations
+ * 
+ * @author Alexandre Schmidt
+ * 
+ * @version 0.1
+ */
+class CreateMarcasTable extends Migration {
+
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * Estrutura da tabela marcas
      */
-    public function up()
-    {
+    public function up() {
         Schema::create('marcas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome', 45);
@@ -22,12 +26,10 @@ class CreateMarcasTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
-     *
-     * @return void
+     * Função que deleta a tabela
      */
-    public function down()
-    {
+    public function down() {
         Schema::dropIfExists('marcas');
     }
+
 }

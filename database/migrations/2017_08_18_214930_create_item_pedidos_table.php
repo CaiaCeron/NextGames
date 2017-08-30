@@ -4,12 +4,17 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * Classe que contem a estrutura da tabela de itens de cada pedido(carrinho de compras) que será criada através das migrations
+ * 
+ * @author Alexandre Schmidt
+ * 
+ * @version 0.1
+ */
 class CreateItemPedidosTable extends Migration {
 
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * Estrutura da tabela item_pedidos
      */
     public function up() {
         Schema::create('item_pedidos', function (Blueprint $table) {
@@ -24,9 +29,7 @@ class CreateItemPedidosTable extends Migration {
     }
 
     /**
-     * Reverse the migrations.
-     *
-     * @return void
+     * Função que deleta a tabela
      */
     public function down() {
         Schema::dropIfExists('item_pedidos');
