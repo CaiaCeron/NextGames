@@ -16,42 +16,36 @@
  
  ## **Objetivo** 
  
- O projeto que atualmente se encontra em desenvolvimento tem como o ojetivo a criação de um comércio eletrônico com foco em vendas de games
- para múltiplas plataformas e equipamentos de hardware tanto para consoles quanto desktop. 
+ O projeto que atualmente se encontra em desenvolvimento tem como o ojetivo a criação de um comércio eletrônico com foco em vendas de games para múltiplas plataformas e equipamentos de hardware tanto para consoles quanto desktop. 
  
  ## **Tecnologias utilizadas** 
  
   - [PHP 7.0](http://www.php.net/)
   - [MySQL 5.6](https://www.mysql.com/)
-  - [Apache 2.4](https://www.apache.org/dyn/closer.cgi)
   - [Laravel 5.4](https://laravel.com/)
-  - [Composer 1.4.2](https://getcomposer.org/)
+  - [Composer 1.4.2](https://getcomposer.org/) 
   
-  ## **Requisitos funcionais** 
- 1. Cadastrar informações de fornecedores
- 2. Alterar ou excluir informações de fornecedores
- 3. Cadastrar mercadorias
- 4. Alterar ou remover mercadorias
- 5. Cadastro dos clientes
- 6. Alterar informações dos clientes
- 7. Emitir relatórios financeiros
- 8. Cadastrar novos administradores dentro do sistema
- 9. Carrinho de compras
- 10. Alterar informações do carrinho de compras
- 11. Diposnibilizar formas alternativas de pagamento no momento da venda (ex: cartões de crédito) 
- 12. Finalizar venda
- 13. Emitir nota fiscal com informações da venda
- 14. E-mail de confirmação após realização da venda
- 15. Cancelar pedido
- 16. Definir produtos que deveram aparecer como destaque no página comercial 
+  ## **Divisão de tarefas** 
+   - **Alexandre Schmidt**: Atualizar conteúdo da Wiki, dos diagramas e do banco de dados. Atuar no desenvolvimento _back-end_ 
+   - **Caiã Ceron**: Atuar no desenvolvimento _back-end_, elaborar um logo para o site comercial  
+   - **Láudrin Garralaga**: Atuar no desenvolvimento _front-end_ (com maior foco no _layout_ comercial) 
+   - **Luiz Felipe**: Atuar desenvolvendo testes de depuração para aplicação, atuar no desenvolvimento _front-end_   
+  
+  ## **Clone do projeto**
+   
+ 1. Faça um clone do projeto 
+ > git clone git@github.com:AlexandreSchmidt/NextGames.git  
  
+ 2. Abra o CMD (Windowns) e navegue até o diretório do projeto clonado  
  
- ## **Requisitos não funcionais** 
- 1. Validação de formulários 
- 2. Cliente deve efetuar login no sistema para adicionar itens no carrinho 
- 3. Para finalizar a venda é obrigatório que o carrinho não esteja vazio e que a forma de pagamento tenha sido informada
- 4. Um administrador logado no sistema não poderá realizar compras
- 5. Somente finalizar venda se o estoque possuir a quantidade necessária para a venda 
- 6. Bloquear acesso em paginas especificas sem autenticação do usuário 
- 7. Todo cliente deverá informar um e-mail válido e uma senha para poder se cadastrar no site 
+ 3. Baixe as dependências do projeto digitando ``composer install --no-scripts`` 
  
+ 4. Será necessário gerar uma [chave de criptografia](https://laravel.com/docs/5.5/encryption) para a aplicaçao usando o comando `php artisan key:generate` 
+ 
+ 5. Utilize o comando `copy .env.example .env` para gerar o arquivo que irá conter informações sobre conexão com banco de dados, serviços SMTP, etc 
+ 
+ 6. Crie um banco de dados com o nome que preferir (ex: nextgames), e feito isso abra o arquivo .env que foi gerado anteriormente e insira nele as informações sobre o nome da banco criado, o nome de usuário e a senha 
+ 
+ 7. Para gerar as tabelas do banco será utilizada uma das facilidades do framework, as [_migrations_](https://laravel.com/docs/5.5/migrations), novamente dentro do diretório do projeto no CMD use o comando `php artisan migrate` para que os scripts das tabelas dentro do projeto sejam executados e criem as tabelas no banco  
+ 
+ 8. Agora para executar o projeto execute o comando `php artisan serve` para iniciar o servidor de testes e acesse a url `localhost:8000` no navegador para visualizar o projeto
