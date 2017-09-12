@@ -40,9 +40,9 @@
  
  3. Baixe as dependências do projeto digitando ``composer install --no-scripts`` 
  
- 4. Será necessário gerar uma [chave de criptografia](https://laravel.com/docs/5.5/encryption) para a aplicaçao usando o comando `php artisan key:generate` 
+ 4. Utilize o comando `copy .env.example .env` para gerar o arquivo que irá conter informações sobre conexão com banco de dados, serviços SMTP, etc  
  
- 5. Utilize o comando `copy .env.example .env` para gerar o arquivo que irá conter informações sobre conexão com banco de dados, serviços SMTP, etc 
+ 5. Será necessário gerar uma [chave de criptografia](https://laravel.com/docs/5.5/encryption) para a aplicaçao usando o comando `php artisan key:generate`
  
  6. Crie um banco de dados com o nome que preferir (ex: nextgames), e feito isso abra o arquivo .env que foi gerado anteriormente e insira nele as informações sobre o nome da banco criado, o nome de usuário e a senha 
  
