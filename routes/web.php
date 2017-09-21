@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('layout_admin.form_endereco');
+    return view('layout_admin.index');
 });

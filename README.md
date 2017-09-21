@@ -25,13 +25,11 @@
   - [Laravel 5.4](https://laravel.com/)
   - [Composer 1.4.2](https://getcomposer.org/) 
   
-  ## **Divisão de tarefas** 
-   - **Alexandre Schmidt**: Atualizar conteúdo da Wiki, dos diagramas e do banco de dados. Atuar no desenvolvimento _back-end_ 
-   - **Caiã Ceron**: Atuar no desenvolvimento _back-end_, elaborar um logo para o site comercial  
-   - **Láudrin Garralaga**: Atuar no desenvolvimento _front-end_ (com maior foco no _layout_ comercial) 
-   - **Luiz Felipe**: Atuar desenvolvendo testes de depuração para aplicação, atuar no desenvolvimento _front-end_   
+**Link para o site hospedado:** [NextGames](https://nextgamescom.000webhostapp.com) 
+
   
   ## **Clone do projeto**
+  
    
  1. Faça um clone do projeto 
  > git clone git@github.com:AlexandreSchmidt/NextGames.git  

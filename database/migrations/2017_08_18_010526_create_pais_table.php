@@ -16,6 +16,8 @@ class CreatePaisTable extends Migration {
     /**
      * Estrutura da tabela pais
      */
+
+    
     public function up() {
         Schema::create('pais', function (Blueprint $table) {
             $table->increments('id');
@@ -28,6 +30,11 @@ class CreatePaisTable extends Migration {
      */
     public function down() {
         Schema::dropIfExists('pais');
+    }
+
+         
+    public function teste(){
+
     }
 
 }
