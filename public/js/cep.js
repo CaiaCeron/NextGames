@@ -11,7 +11,7 @@ $(document).ready(function(){
                     +' '+data.logradouro);
             $('#cidade').val(data.cidade);
             $('#bairro').val(data.bairro);
-            $('#uf').val(data.uf);
+            $('#estado').val(data.uf);
             $('#num').focus();
         }                        
         });        

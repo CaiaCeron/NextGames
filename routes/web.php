@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layout_admin.index');
+    return view('layout_admin.form_endereco');
 });
+
+Route::post('/endereco', 'CadastroClienteController@cadastrar')->name('endereco.cadastrar');

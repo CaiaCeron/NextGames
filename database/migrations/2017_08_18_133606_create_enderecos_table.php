@@ -21,11 +21,11 @@ class CreateEnderecosTable extends Migration {
             $table->increments('id');
             $table->string('cep', 45);
             $table->string('logradouro', 45);
+            $table->string('bairro', 45);
             $table->string('numero', 5);
             $table->integer('cidade_id')->unsigned();
             $table->foreign('cidade_id')->references('id')->on('cidades');
-            $table->integer('fornecedor_id')->unsigned();
-            $table->foreign('fornecedor_id')->references('id')->on('fornecedors');
+            
         });
     }
 
