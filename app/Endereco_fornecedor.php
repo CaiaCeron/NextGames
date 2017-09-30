@@ -10,4 +10,14 @@ class Endereco_fornecedor extends Model {
     
     protected $fillable = array('endereco_id', 'fornecedor_id');
 
+    protected $table = 'endereco_fornecedor';
+    
+    public function endereco(){
+        return $this->belongsTo('App\Endereco');
+    }
+    
+    public function fornecedor(){
+        return $this->belongsTo('App\Fornecedor');
+    }    
+    
 }

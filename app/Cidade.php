@@ -9,4 +9,8 @@ class Cidade extends Model
     public $timestsamps = false;
     
     protected $fillable = array('nome', 'estado_id');
+    
+    public function estado(){
+        return $this->belongsTo('App\Estado');
+    }
 }

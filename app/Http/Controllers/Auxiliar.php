@@ -63,5 +63,7 @@ class Auxiliar {
 
         return $id_endereco['id'][0]->id;
     }
+    
+    public function 
 
 }

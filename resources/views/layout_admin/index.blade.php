@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+@extends('layout_admin.template')
 
+@section('conteudo')
+&nbsp;
+<h1>Bem-Vindo ao gerenciador do seu website</h1>
 
-
-<img src="http://www.adepolma.com.br/site/images/desenvolvimento.jpg" alt="site em contrução">
-
-
-</body>
-</html>
+@endsection
